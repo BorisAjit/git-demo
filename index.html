@@ -27,6 +27,7 @@
         <p>
             As seen in Season 5, Tommy (Murphy) is now Deputy Leader of the British Union of Fascists alongside leader Oswald Mosley (Claflin). The new season will take off following the failed assassination attempt on Oswald. Tommy is yet to learn who snitching led to Oswald escaping the assassination attempt unhurt and there are a lot of suspects. The cliffhanger ending of Season 5 also saw Tommy put a gun to his head and the final season will further address how Shelby recourses himself following that. 
         </p>
+        <p>The time is: <span id = time></span></p>
         <style>
             body{
                 background-color: aquamarine; 
@@ -49,6 +50,17 @@
                 font-size: medium;
                 text-indent: 50px;
             }
+            #time{
+                text-align: center;
+            }
         </style>
+        <script>
+            function getTime(){
+                var datetime = new Date();
+                document.getElementById("time").textContent = datetime;
+            }
+            setInterval(getTime,1000)
+
+        </script>
     </body>
 </html>
